@@ -2,9 +2,11 @@ package chiz.springframework.chizpetclinic.services.map;
 
 import chiz.springframework.chizpetclinic.model.Pet;
 import chiz.springframework.chizpetclinic.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
 
     @Override

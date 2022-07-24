@@ -3,9 +3,11 @@ package chiz.springframework.chizpetclinic.services.map;
 import chiz.springframework.chizpetclinic.model.Owner;
 import chiz.springframework.chizpetclinic.services.CrudService;
 import chiz.springframework.chizpetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
