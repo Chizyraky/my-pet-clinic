@@ -2,10 +2,11 @@ package chiz.springframework.chizpetclinic.services.map;
 
 import chiz.springframework.chizpetclinic.model.Vet;
 import chiz.springframework.chizpetclinic.services.CrudService;
+import chiz.springframework.chizpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
